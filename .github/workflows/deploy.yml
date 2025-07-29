@@ -1,22 +1,25 @@
 name: Build and Deploy
+
 env:
   CI: false
   GITHUB_USERNAME: ${{ github.repository_owner }}
-  REACT_APP_GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # This is automatically set by Github Actions
+  REACT_APP_GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # Automatically provided by GitHub Actions
   USE_GITHUB_DATA: "true"
+
 on:
   workflow_dispatch:
   push:
     branches:
       - main
   schedule:
-    - cron: "0 1 * * 0" # see https://docs.github.com/en/actions/reference/events-that-trigger-workflows#scheduled-events
+    - cron: "0 1 * * 0" # Runs every Sunday at 6 AM PKT
+
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout 🛎️
-        uses: actions/checkout@v3 # If you're using actions/checkout@v3 you must set persist-credentials to false in most cases for the deployment to work correctly.
+        uses: actions/checkout@v3
         with:
           persist-credentials: false
 
@@ -25,16 +28,17 @@ jobs:
         with:
           node-version: 20.x
 
-      - name: Update npm 🚀
-        run: npm install -g npm@latest
+      - name: Use compatible npm version 🚀
+        run: npm install -g npm@10
 
-      - name: Install and Build 🔧 # Build the Project
+      - name: Install and Build 🔧
         run: |
           npm install
           npm run build
+
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          GITHUB_TOKEN : ${{ secrets.GITHUB_TOKEN }} # This is provided by GitHub.
-          BRANCH: gh-pages # The branch the action should deploy to.
-          FOLDER: build # The folder the action should deploy.
+          token: ${{ secrets.GITHUB_TOKEN }}
+          branch: gh-pages
+          folder: build
