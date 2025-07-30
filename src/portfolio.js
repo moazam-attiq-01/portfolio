@@ -154,7 +154,7 @@ const techStack = {
   experience: [
     {
       Stack: "Frontend/Design", //Insert stack or technology you have experience in
-      progressPercentage: "75%" //Insert relative proficiency in percentage
+      progressPercentage: "80%" //Insert relative proficiency in percentage
     },
     {
       Stack: "Backend",
@@ -162,7 +162,7 @@ const techStack = {
     },
     {
       Stack: "Programming",
-      progressPercentage: "80%"
+      progressPercentage: "85%"
     }
   ],
   displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
@@ -256,65 +256,145 @@ const bigProjects = {
 // Include certificates, talks etc
 
 const achievementSection = {
-  title: emoji("Achievements and Certifications 🏆"),
-  subtitle: "Academic excellence, certifications, and hands-on accomplishments from my journey.",
+  title: emoji("Personal Project Repositories 📁"),
+  subtitle: "Hands-on academic and course-based projects developed across Web, Mobile, Networking, and Java domains.",
 
   achievementsCards: [
     {
-      title: "Dean's Merit Scholarship Award",
+      title: "Point of Sale System (Web Engineering)",
       subtitle:
-        "Awarded multiple times at GIFT University for academic excellence and high GPA during the BSCS program.",
-      image: require("./assets/images/awardLogo.png"), // Replace with your preferred image
-      imageAlt: "Dean's Award Logo",
-      footerLink: [
-        {
-          name: "Award Details",
-          url: "#" // Add proof link if you want
-        }
-      ]
-    },
-    {
-      title: "Professional Practices Project (POS System)",
-      subtitle:
-        "Developed and led a complete Point-of-Sale system as a final year course project with backend, frontend, and schema design.",
-      image: require("./assets/images/codeLogo.png"), // Custom project logo or general one
-      imageAlt: "POS Project Logo",
+        "A MERN stack-based POS application tailored for small-scale shop use. Includes inventory, billing, and refund tracking.",
+      image: require("./assets/images/webProjectLogo.jpg"),
+      imageAlt: "POS Logo",
       footerLink: [
         {
           name: "GitHub Repository",
-          url: "https://github.com/moazam-attiq-01/PointOfSaleSystem" // Replace with your actual link
+          url: "https://github.com/moazam-attiq-01/PointOfSaleSystem"
         }
       ]
     },
     {
-      title: "DSA & OOP Coursework",
+      title: "Mobile File Sharing App – LabLink",
       subtitle:
-        "Demonstrated strong problem-solving and coding skills through C++, Java, and Python in advanced university coursework.",
+        "React Native + Firebase based file sharing platform built for the Mobile Computing course. Supports file upload and real-time database sync.",
+      image: require("./assets/images/reactLogo.png"),
+      imageAlt: "LabLink App",
+      footerLink: [
+        {
+          name: "GitHub Repository",
+          url: "https://github.com/moazam-attiq-01/LabLink"
+        }
+      ]
+    },
+    {
+      title: "Matchmaking Web App",
+      subtitle:
+        "Web-based matchmaking platform using PHP, HTML, CSS, and JavaScript. Includes registration, matching algorithm, and dashboard UI.",
       image: require("./assets/images/codeLogo.png"),
-      imageAlt: "Code Logo",
+      imageAlt: "Matchmaking Logo",
       footerLink: [
         {
-          name: "GitHub Portfolio",
-          url: "https://github.com/moazam-attiq-01" // Link to your GitHub profile
+          name: "GitHub Repository",
+          url: "https://github.com/moazam-attiq-01/Matchmaking_System"
         }
       ]
     },
     {
-      title: "Software Engineering Documentation Expert",
+      title: "Railway Reservation System (Web Version)",
       subtitle:
-        "Prepared full documentation (SRS, ERDs, Flowcharts) for major projects like Railway Reservation System and Vehicle Repair System.",
-      image: require("./assets/images/docsLogo.png"),
-      imageAlt: "Documentation Logo",
+        "A PHP and Tailwind CSS based reservation platform with real-time seat selection and route management.",
+      image: require("./assets/images/trainLogo.png"),
+      imageAlt: "Railway System",
       footerLink: [
         {
-          name: "Sample Docs",
-          url: "#" // Link to Google Drive or GitHub if you want to share
+          name: "GitHub Repository",
+          url: "https://github.com/moazam-attiq-01/Railway_Reservation_System"
+        }
+      ]
+    },
+    {
+      title: "University Networking (Cisco Packet Tracer)",
+      subtitle:
+        "Simulated university network infrastructure project built in Cisco Packet Tracer. Demonstrated subnetting, routing, and topology optimization.",
+      image: require("./assets/images/networkLogo.png"),
+      imageAlt: "Networking Project",
+      footerLink: [
+        {
+          name: "GitHub Repository",
+          url: "https://github.com/moazam-attiq-01/University_Networking"
+        }
+      ]
+    },
+    {
+      title: "Bank System Documentation (SRE)",
+      subtitle:
+        "Software Requirement Engineering documentation project for a fictional banking system. Includes SRS, ERD, and flow diagrams.",
+      image: require("./assets/images/docsLogo.jpg"),
+      imageAlt: "Bank Docs",
+      footerLink: [
+        {
+          name: "GitHub Repository",
+          url: "https://github.com/moazam-attiq-01/Bank_System"
+        }
+      ]
+    },
+    {
+      title: "Vehicle Management System (Java + DSA)",
+      subtitle:
+        "A command-line based Java project demonstrating file I/O and core data structures like linked lists and trees.",
+      image: require("./assets/images/javaLogo.png"),
+      imageAlt: "Java DSA",
+      footerLink: [
+        {
+          name: "GitHub Repository",
+          url: "https://github.com/moazam-attiq-01/Vehicle_Management_System"
+        }
+      ]
+    },
+    {
+      title: "University Management System (Java)",
+      subtitle:
+        "A mini terminal-based management system for university staff/students built using core Java.",
+      image: require("./assets/images/javaLogo.png"),
+      imageAlt: "Java App",
+      footerLink: [
+        {
+          name: "GitHub Repository",
+          url: "https://github.com/moazam-attiq-01/University_Management_System"
+        }
+      ]
+    },
+    {
+      title: "SmartTrack – SDLC Docs",
+      subtitle:
+        "A documentation-only project on railway system lifecycle, covering SDLC, use cases, and system diagrams.",
+      image: require("./assets/images/docsLogo.jpg"),
+      imageAlt: "SmartTrack Docs",
+      footerLink: [
+        {
+          name: "GitHub Repository",
+          url: "https://github.com/moazam-attiq-01/SmartTrack"
+        }
+      ]
+    },
+    {
+      title: "POS – SCD Documentation",
+      subtitle:
+        "Visual and design documentation for a POS system including SCD, flowcharts, and Figma UI wireframes.",
+      image: require("./assets/images/docsLogo.jpg"),
+      imageAlt: "POS Docs",
+      footerLink: [
+        {
+          name: "GitHub Repository",
+          url: "https://github.com/moazam-attiq-01/Point_of_Sale_System"
         }
       ]
     }
   ],
   display: true
 };
+
+
 
 
 // Blogs Section
@@ -379,7 +459,7 @@ const resumeSection = {
   subtitle: "Feel free to download my resume",
 
   // Please Provide with Your Podcast embeded Link
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 const contactInfo = {
