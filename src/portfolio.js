@@ -47,15 +47,14 @@ const socialMediaLinks = {
 
 const skillsSection = {
   title: "What I do",
-  subTitle: "I AM A CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK I CAN WORK WITH EASE",
+  subTitle:
+    "I AM A CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK I CAN WORK WITH EASE",
   skills: [
     emoji(
       "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"
     ),
     emoji("⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks"),
-    emoji(
-      "⚡ Integration of third party services such as Firebase/ AWS "
-    )
+    emoji("⚡ Integration of third party services such as Firebase/ AWS ")
   ],
 
   /* Make Sure to include correct Font Awesome Classname to view your icon
@@ -113,7 +112,7 @@ https://fontawesome.com/icons?d=gallery */
     {
       skillName: "mongo-db",
       fontAwesomeClassname: "fas fa-database"
-    },
+    }
   ],
   display: true // Set false to hide this section, defaults to true
 };
@@ -208,7 +207,6 @@ const workExperiences = {
       ]
     }
   ]
-  
 };
 
 /* Your Open Source Section to View Your Github Pinned Projects
@@ -257,7 +255,8 @@ const bigProjects = {
 
 const achievementSection = {
   title: emoji("Personal Project Repositories 📁"),
-  subtitle: "Hands-on academic and course-based projects developed across Web, Mobile, Networking, and Java domains.",
+  subtitle:
+    "Hands-on academic and course-based projects developed across Web, Mobile, Networking, and Java domains.",
 
   achievementsCards: [
     {
@@ -393,9 +392,6 @@ const achievementSection = {
   ],
   display: true
 };
-
-
-
 
 // Blogs Section
 
